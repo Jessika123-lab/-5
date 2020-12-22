@@ -1,0 +1,15 @@
+x = float(input("x="))
+e = float(input("e="))
+a = float(input("a="))
+
+import math
+b=1
+d=1
+n=1
+S=1
+while math.fabs((x*math.log(a))**n)/d*b>e:
+    S+=((x*math.log(a))**n)/d*b
+    d=d*b
+    b+=1
+    n+=1
+print(S)
